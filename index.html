@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
     <head>
-        <title>Pagina principal</title>
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/home.css">
-        <script src="../javascript/home.js"></script>
-        <script src="../javascript/replaceTagWithHTML.js"></script>
+        <title>Redirecting...</title>
+        <script>
+            window.onload = function() {
+                let usr_lang = navigator.language.slice(0,2)
+                let lang = ["es", "en"].includes(usr_lang)? usr_lang : "en";
+                window.location.replace(lang + "/index.html")
+            }
+        </script>
     </head>
     <body>
-        <script id="replace_with_navbar" src="../javascript/insertTopNav.js"></script>
-        
-        <div id="first">
-            <img src="../imgs/Logo.png">
-            <div id="first-info">
-                <h2>Quiero decir esto</h2>
-                <p>Estoy diciendo esto porque si y esto solo es una demostracion para ver si el textofunciona bien.</p>
-            </div>
-        </div>
-        <div id="promociones">
-
-        </div>
-        <div id="second">
-            <div class="grow-panels">
-                <img src="../imgs/Logo.png"/>
-                <p>información</p>
-            </div>
-            <div class="grow-panels">
-                <img src="../imgs/Logo.png"/>
-                <p>información</p>
-            </div>
-        </div>
+        <h1>Redirecting to language specific page, please wait a moment</h1>
     </body>
 </html>
