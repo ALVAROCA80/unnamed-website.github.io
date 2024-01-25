@@ -1,0 +1,17 @@
+[
+    {
+        "name"  : "promocion1",
+        "img"   : "../imgs/logo.png",
+        "until" : "2024-01-25T23:00:00.000Z"
+    },
+    {
+        "name"  : "promocion2",
+        "img"   : "../imgs/logo.png",
+        "until" : "2024-01-26T23:00:00.000Z"
+    },
+    {
+        "name"  : "promocion3",
+        "img"   : "../imgs/logo.png",
+        "until" : "2024-01-26T23:00:00.000Z"
+    }
+]

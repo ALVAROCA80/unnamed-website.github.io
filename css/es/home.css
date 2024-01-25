@@ -23,13 +23,40 @@
 
 #promociones {
     background-color: cadetblue;
+    display: flex;
+    flex-direction: row;
     height: 90vh;
+    grid-template-columns: 5vw auto 5vw;
+    align-items: center;
+}
+
+.carrousel {
+    width: 100%;
+    height: 80%;
+    transition: opacity 0.2s ease-in-out;
+}
+.carrousel img {
+    width: 100%;
+    height: 100%;
+}
+.carrousel p {
+    position: relative;
+    bottom: 3.5em;
+    text-align: center;
+}
+
+#promociones button {
+    width: 10%;
+    height: 80%;
 }
 
 #second {
     background-color: indigo;
+    padding: 2vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
     width: 100%;
-    height: 90vh;
 }
 
 #second img {
@@ -39,9 +66,10 @@
 .grow-panels {
     --width: 300px;
     --height: 400px;
-    --x-margin: 30px;
-    --y-margin: 50px;
     --grow-percent: 5;
+    --margin: 10px;
+    --x-margin: max(calc(var(--width)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
+    --y-margin: max(calc(var(--height)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
     float:inline-start;
     margin: var(--y-margin) var(--x-margin);
     background-color: blueviolet;

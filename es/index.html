@@ -2,8 +2,8 @@
 <html lang="es">
     <head>
         <title>Pagina principal</title>
-        <link rel="stylesheet" href="../css/general.css">
-        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/es/general.css">
+        <link rel="stylesheet" href="../css/es/home.css">
         <script src="../javascript/home.js"></script>
         <script src="../javascript/replaceTagWithHTML.js"></script>
     </head>
@@ -18,9 +18,18 @@
             </div>
         </div>
         <div id="promociones">
-
+            <button type="button" value="<" onclick="shuffle('promo',-1)"></button>
+            <div class="carrousel" name="promo">
+                <img src="../imgs/Logo.png"/>
+                <p>info</p>
+            </div>
+            <button type="button" value=">" onclick="shuffle('promo',1)"></button>
         </div>
         <div id="second">
+            <div class="grow-panels">
+                <img src="../imgs/Logo.png"/>
+                <p>información</p>
+            </div>
             <div class="grow-panels">
                 <img src="../imgs/Logo.png"/>
                 <p>información</p>
