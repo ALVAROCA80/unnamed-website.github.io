@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 h1, h2{
     margin-top: 0;
 }
@@ -17,7 +21,7 @@ h1, h2{
 .topNav {
     z-index: 100;
     width: 100%;
-    height: 10vh;
+    height: 3.5rem;
     overflow: hidden;
     background-color: white;
 }
@@ -38,7 +42,7 @@ h1, h2{
     overflow: hidden;
     background-color: rgb(230, 230, 230);
     position: absolute;
-    top: 19.9vh;
+    top: 109.9vh;
     height: 0px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;

@@ -8,15 +8,14 @@
         <script src="../javascript/replaceTagWithHTML.js"></script>
     </head>
     <body>
-        <script id="replace_with_navbar" src="../javascript/insertTopNav.js"></script>
-        
-        <div id="first">
+        <div id="first" class="beforeNav">
             <img src="../imgs/Logo.png">
             <div id="first-info">
                 <h2>Quiero decir esto</h2>
                 <p>Estoy diciendo esto porque si y esto solo es una demostracion para ver si el textofunciona bien.</p>
             </div>
         </div>
+        <script id="replace_with_navbar" src="../javascript/insertTopNav.js"></script>
         <div id="promociones">
             <button type="button" value="<" onclick="shuffle('promo',-1)"></button>
             <div class="carrousel" name="promo">
@@ -28,16 +27,16 @@
         <div id="second">
             <div class="grow-panels">
                 <img src="../imgs/Logo.png"/>
-                <p>información</p>
+                <p>Ortodoncia</p>
             </div>
             <div class="grow-panels">
                 <img src="../imgs/Logo.png"/>
-                <p>información</p>
+                <p>Harmonización</p>
             </div>
-            <div class="grow-panels">
-                <img src="../imgs/Logo.png"/>
-                <p>información</p>
-            </div>
+        </div>
+        <div id="contacto">
+            <h1>Contacto: </h1>
+            <p>contactenos </p>
         </div>
     </body>
 </html>

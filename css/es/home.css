@@ -1,7 +1,7 @@
 #first {
-    background-color: red;
+    background-color:darkcyan;
     margin: 0;
-    height: 80vh;
+    height: 100vh;
     width: 100%;
 }
 
@@ -11,7 +11,7 @@
 }
 
 #first-info {
-    background-color: crimson;
+    background-color: beige;
     position: relative;
     top: -75%;
     left: 50%;
@@ -51,7 +51,7 @@
 }
 
 #second {
-    background-color: indigo;
+    background-color: slategray;
     padding: 2vh 0;
     display: flex;
     flex-wrap: wrap;
@@ -64,19 +64,20 @@
     height: var(width);
 }
 .grow-panels {
-    --width: 300px;
-    --height: 400px;
-    --grow-percent: 5;
+    --width: 450px;
+    --height: 75vh;
+    --grow-percent: 8;
     --margin: 10px;
     --x-margin: max(calc(var(--width)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
     --y-margin: max(calc(var(--height)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
     float:inline-start;
     margin: var(--y-margin) var(--x-margin);
-    background-color: blueviolet;
+    background-color: lightblue;
     width: var(--width);
     height: var(--height);
     overflow: hidden;
     font-size: 100%;
+    box-shadow: 10px;
     transition: all .2s ease-in-out;
 }
 .grow-panels:hover {
@@ -84,4 +85,15 @@
     height: calc(var(--height) * (1 + var(--grow-percent)/100));
     width: calc(var(--width) * (1 + var(--grow-percent)/100));
     font-size: calc(100% + var(--grow-percent));
+}
+
+#contacto {
+    background-color: black;
+    padding: 5vh 5vw;
+    color: white;
+    height: 50vh;
+    width: 100%;
+}
+#contacto p {
+    padding: 0 5vw;
 }
