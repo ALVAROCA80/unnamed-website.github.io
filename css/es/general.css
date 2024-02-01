@@ -19,11 +19,15 @@ h1, h2{
 }
 
 .topNav {
-    z-index: 100;
+    --beforeNav-height: 0;
+    z-index: 1000;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     height: 3.5rem;
     overflow: hidden;
-    background-color: white;
+    background-color:oldlace;
 }
 
 .topNav.fixed {
@@ -33,6 +37,7 @@ h1, h2{
 }
 
 .topNav .dropdown {
+    z-index: 999;
     display: inline-block;
 }
 
@@ -40,9 +45,9 @@ h1, h2{
     display: grid;
     columns: auto;
     overflow: hidden;
-    background-color: rgb(230, 230, 230);
+    background-color: oldlace;
     position: absolute;
-    top: 109.9vh;
+    top: calc(var(--beforeNav-height) + 3.5rem);
     height: 0px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -51,7 +56,7 @@ h1, h2{
 .topNav.fixed .drop-Content {
     height: 0px;
     position: fixed;
-    top: 9.8vh;
+    top: 3.5rem;
 }
 
 .topNav .dropdown:hover .drop-Content {

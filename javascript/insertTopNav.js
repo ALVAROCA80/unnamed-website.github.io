@@ -1,15 +1,29 @@
-replace_Tag_HTML(document.querySelector("script#replace_with_navbar"), "topNav.html")
+replace_Tag_HTML(
+    document.querySelector("script#replace_with_navbar"),
+    "es/topNav.html",
+    setBeforeNavHeight
+)
+
+function setBeforeNavHeight() {
+    const before = document.querySelector(".beforeNav");
+    if (before) {
+        const topNav = document.querySelector(".topNav");
+        topNav.style.setProperty("--beforeNav-height", `${before.offsetHeight}px`);
+    }
+}
+window.addEventListener("resize", setBeforeNavHeight);
 
 document.addEventListener("scroll", function () {
-    const header = document.querySelector(".beforeNav");
+    const before = document.querySelector(".beforeNav");
+    const after = document.querySelector(".afterNav");
     const topNav = document.querySelector(".topNav");
-    const height_offset = header.offsetHeight;
+    const height_offset = before?before.offsetHeight:0;
     const scrolled_Distance = Math.abs(document.body.getBoundingClientRect().top);
-    if (scrolled_Distance >= height_offset) {
+    if (scrolled_Distance > height_offset) {
         topNav.classList.add("fixed");
-        header.style.marginBottom = `${topNav.offsetHeight}px`;
+        after.style.marginTop = `${topNav.offsetHeight}px`;
     } else {
         topNav.classList.remove("fixed");
-        header.style.marginBottom = "0";
+        after.style.marginTop = "0";
     }
 })

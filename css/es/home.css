@@ -1,5 +1,5 @@
 #first {
-    background-color:darkcyan;
+    background-color: rgb(220, 220, 220);
     margin: 0;
     height: 100vh;
     width: 100%;
@@ -11,7 +11,7 @@
 }
 
 #first-info {
-    background-color: beige;
+    background-color: slategray;
     position: relative;
     top: -75%;
     left: 50%;
@@ -22,7 +22,7 @@
 }
 
 #promociones {
-    background-color: cadetblue;
+    background-color: darkslategray;
     display: flex;
     flex-direction: row;
     height: 90vh;
@@ -35,13 +35,28 @@
     height: 80%;
     transition: opacity 0.2s ease-in-out;
 }
+
 .carrousel img {
     width: 100%;
     height: 100%;
 }
+
+.promo {
+    transition: all ease-in-out 1s;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
 .carrousel p {
     position: relative;
-    bottom: 3.5em;
+    bottom: 7em;
+    text-align: center;
+}
+.carrousel h2 {
+    position: relative;
+    top: 0;
     text-align: center;
 }
 
@@ -51,7 +66,7 @@
 }
 
 #second {
-    background-color: slategray;
+    background-color: rgb(220, 220, 220);
     padding: 2vh 0;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +87,7 @@
     --y-margin: max(calc(var(--height)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
     float:inline-start;
     margin: var(--y-margin) var(--x-margin);
-    background-color: lightblue;
+    background-color: slategray;
     width: var(--width);
     height: var(--height);
     overflow: hidden;
@@ -89,11 +104,17 @@
 
 #contacto {
     background-color: black;
-    padding: 5vh 5vw;
+    padding-top: 5vh;
+    padding-top: 5svh;
     color: white;
     height: 50vh;
     width: 100%;
 }
+
+#contacto h1 {
+    text-indent: 25px;
+}
+
 #contacto p {
-    padding: 0 5vw;
+    text-indent: 50px;
 }

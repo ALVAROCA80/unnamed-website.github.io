@@ -6,11 +6,16 @@
             window.onload = function() {
                 let usr_lang = navigator.language.slice(0,2)
                 let lang = ["es", "en"].includes(usr_lang)? usr_lang : "en";
-                window.location.replace(lang + "/index.html")
+                window.location.replace(lang + "/")
             }
         </script>
     </head>
     <body>
         <h1>Redirecting to language specific page, please wait a moment</h1>
+        <h2>If nothing loads please select the languages below</h2>
+        <ol>
+            <li><a href="en">english</a></li>
+            <li><a href="es">español</a></li>
+        </ol>
     </body>
 </html>

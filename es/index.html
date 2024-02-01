@@ -2,35 +2,37 @@
 <html lang="es">
     <head>
         <title>Pagina principal</title>
-        <link rel="stylesheet" href="../css/es/general.css">
-        <link rel="stylesheet" href="../css/es/home.css">
-        <script src="../javascript/home.js"></script>
-        <script src="../javascript/replaceTagWithHTML.js"></script>
+        <base href="../">
+        <link rel="stylesheet" href="css/es/general.css">
+        <link rel="stylesheet" href="css/es/home.css">
+        <script src="javascript/home.js"></script>
+        <script src="javascript/replaceTagWithHTML.js"></script>
     </head>
     <body>
         <div id="first" class="beforeNav">
-            <img src="../imgs/Logo.png">
+            <img src="imgs/Logo.png">
             <div id="first-info">
                 <h2>Quiero decir esto</h2>
                 <p>Estoy diciendo esto porque si y esto solo es una demostracion para ver si el textofunciona bien.</p>
             </div>
         </div>
-        <script id="replace_with_navbar" src="../javascript/insertTopNav.js"></script>
-        <div id="promociones">
-            <button type="button" value="<" onclick="shuffle('promo',-1)"></button>
+        <script id="replace_with_navbar" src="javascript/insertTopNav.js"></script>
+        <div id="promociones" class="afterNav">
+            <button type="button" onclick="shuffle(-1)"><</button>
             <div class="carrousel" name="promo">
-                <img src="../imgs/Logo.png"/>
-                <p>info</p>
+                <h2 class="carrousel-name">No hay promociones</h2>
+                <img class="carrousel-img" src="imgs/Logo.png"/>
+                <p class="carrousel-time">00:00:00</p>
             </div>
-            <button type="button" value=">" onclick="shuffle('promo',1)"></button>
+            <button type="button" onclick="shuffle(1)">></button>
         </div>
         <div id="second">
             <div class="grow-panels">
-                <img src="../imgs/Logo.png"/>
+                <img src="imgs/Logo.png"/>
                 <p>Ortodoncia</p>
             </div>
             <div class="grow-panels">
-                <img src="../imgs/Logo.png"/>
+                <img src="imgs/Logo.png"/>
                 <p>Harmonización</p>
             </div>
         </div>
