@@ -4,7 +4,7 @@ ol {
 }
 
 #lista {
-    background-color: coral;
+    background-color: var(--division-2);
     height: calc(100vh - 3.5rem);
     width: 100%;
 }
@@ -22,9 +22,9 @@ ol {
 }
 
 #tratamiento1 {
-    background-color: cadetblue;
+    background-color: var(--division-1);
 }
 
 #tratamiento2 {
-    background-color: darkkhaki;
+    background-color: var(--division-3);
 }

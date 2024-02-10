@@ -1,4 +1,15 @@
 html {
+    --bright: rgb(236, 244, 214);
+    --division-1: rgb(238, 226, 222);
+    --division-2: rgb(158, 184, 217);
+    --division-3: rgb(182, 187, 196);
+    --division-4: rgb(240, 236, 229);
+    --inner-division-1: rgb(124, 147, 195);
+    --inner-division-2: rgb(112, 119, 161);
+    --inner-division-3: rgb(49, 48, 77);
+    --atention-1: rgb(162, 87, 114);
+    --atention-2: rgb(22, 26, 48);
+    scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
@@ -27,7 +38,7 @@ h1, h2{
     justify-content: space-around;
     height: 3.5rem;
     overflow: hidden;
-    background-color:oldlace;
+    background-color: var(--atention-1);
 }
 
 .topNav.fixed {
@@ -45,7 +56,7 @@ h1, h2{
     display: grid;
     columns: auto;
     overflow: hidden;
-    background-color: oldlace;
+    background-color: var(--atention-1);
     position: absolute;
     top: calc(var(--beforeNav-height) + 3.5rem);
     height: 0px;
@@ -78,11 +89,6 @@ a {
     text-decoration: none;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0px;
-    background-color: lightgreen;
 }

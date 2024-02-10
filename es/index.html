@@ -4,8 +4,8 @@
         <title>Pagina principal</title>
         <base href="../">
         <link rel="stylesheet" href="css/es/general.css">
-        <link rel="stylesheet" href="css/es/home.css">
-        <script src="javascript/home.js"></script>
+        <link rel="stylesheet" href="css/es/principal.css">
+        <script src="javascript/principal.js"></script>
         <script src="javascript/replaceTagWithHTML.js"></script>
     </head>
     <body>
@@ -18,13 +18,13 @@
         </div>
         <script id="replace_with_navbar" src="javascript/insertTopNav.js"></script>
         <div id="promociones" class="afterNav">
-            <button type="button" onclick="shuffle(-1)"><</button>
-            <div class="carrousel" name="promo">
+            <button class="car-button"type="button" onclick="shuffle(-1)"><</button>
+            <div class="carrousel fade-out" name="promo">
                 <h2 class="carrousel-name">No hay promociones</h2>
                 <img class="carrousel-img" src="imgs/Logo.png"/>
                 <p class="carrousel-time">00:00:00</p>
             </div>
-            <button type="button" onclick="shuffle(1)">></button>
+            <button class="car-button" type="button" onclick="shuffle(1)">></button>
         </div>
         <div id="second">
             <div class="grow-panels">
