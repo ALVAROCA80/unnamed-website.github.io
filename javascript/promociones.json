@@ -2,16 +2,16 @@
     {
         "name"  : "promocion1",
         "img"   : "imgs/logo.png",
-        "until" : "Feb 03 2024 22:00:00 GMT-0500"
+        "until" : "Feb 10 2024 22:00:00 GMT-0500"
     },
     {
         "name"  : "promocion2",
         "img"   : "imgs/logo.png",
-        "until" : "Feb 03 2024 16:30:00 GMT-0500"
+        "until" : "Feb 09 2024 16:30:00 GMT-0500"
     },
     {
         "name"  : "promocion3",
         "img"   : "imgs/logo.png",
-        "until" : "Feb 04 2024 20:00:00 GMT-0500"
+        "until" : "Feb 20 2024 20:00:00 GMT-0500"
     }
 ]

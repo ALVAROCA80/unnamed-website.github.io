@@ -11,13 +11,16 @@
 }
 
 #first-info {
-    background-color: var(--inner-division-3);
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(10, 10, 10, 0.1);
+    border-radius: 20px;
     position: relative;
-    top: -75%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%,0);
-    width: 300px;
-    height: 200px;
+    width: 10rem;
+    height: auto;
     text-align: center;
 }
 
@@ -52,8 +55,9 @@
 
 .carrousel p {
     position: relative;
+    padding-right: 1em;
     bottom: 7em;
-    text-align: center;
+    text-align: right;
 }
 .carrousel h2 {
     position: relative;
@@ -74,11 +78,11 @@
 }
 
 #second {
+    --first-box-size: 50vw;
     background-color: var(--division-3);
-    padding: 2vh 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
+    flex-wrap: nowrap;
+    justify-content:left;
     width: 100%;
 }
 
@@ -86,28 +90,26 @@
     width: inherit;
     height: var(width);
 }
+
+.first-grow {
+    width: var(--first-box-size);
+    border-radius: 0 20px 20px 0;
+}
+
+.second-grow {
+    border-radius: 20px 0 0 20px;
+    width: calc(100vw - var(--first-box-size));
+}
+
 .grow-panels {
-    --width: 450px;
-    --height: 75vh;
-    --grow-percent: 8;
-    --margin: 10px;
-    --x-margin: max(calc(var(--width)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
-    --y-margin: max(calc(var(--height)*(var(--grow-percent)/200)) + var(--margin), var(--margin));
+    height: calc(100vh - 3.5rem);
+    height: calc(100svh - 3.5rem);
     float:inline-start;
-    margin: var(--y-margin) var(--x-margin);
     background-color: var(--inner-division-2);
-    width: var(--width);
-    height: var(--height);
     overflow: hidden;
     font-size: 100%;
     box-shadow: 10px;
-    transition: all .2s ease-in-out;
-}
-.grow-panels:hover {
-    margin: calc(var(--y-margin) - var(--height) * (var(--grow-percent)/200)) calc(var(--x-margin) - var(--width) * (var(--grow-percent)/200));
-    height: calc(var(--height) * (1 + var(--grow-percent)/100));
-    width: calc(var(--width) * (1 + var(--grow-percent)/100));
-    font-size: calc(100% + var(--grow-percent));
+    transition: all .5s ease-in-out;
 }
 
 #contacto {

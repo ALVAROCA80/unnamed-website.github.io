@@ -1,0 +1,38 @@
+
+.corners-1 {
+    height: 7rem;
+    width: 21rem;
+    background-color: var(--division-1);
+    border-radius: 10px 0 10px 0;
+    margin-right: 10px;
+}
+.corners-2 {
+    height: 7rem;
+    background-color: var(--division-2);
+    width: 21rem;
+    border-radius: 0 10px 0 10px;
+    margin-left: 10px;
+}
+
+.first-center {
+    height: 21rem;
+    --width: min(max(90vw,35rem), 56rem);
+    width: var(--width);
+    margin: 0 calc((100vw - var(--width)) / 2);
+    background-color: var(--division-3);
+    border-radius: 10px;
+}
+
+.centerFlex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.columnFlex {
+    height: 42rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

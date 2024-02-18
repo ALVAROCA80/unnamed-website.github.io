@@ -12,33 +12,37 @@
         <div id="first" class="beforeNav">
             <img src="imgs/Logo.png">
             <div id="first-info">
-                <h2>Quiero decir esto</h2>
-                <p>Estoy diciendo esto porque si y esto solo es una demostracion para ver si el textofunciona bien.</p>
+                <h2>Ortoline</h2>
             </div>
         </div>
         <script id="replace_with_navbar" src="javascript/insertTopNav.js"></script>
         <div id="promociones" class="afterNav">
-            <button class="car-button"type="button" onclick="shuffle(-1)"><</button>
+            <button class="car-button"type="button" onclick="shuffle(-1)" style="border-radius: 0 20px 20px 0;"><</button>
             <div class="carrousel fade-out" name="promo">
                 <h2 class="carrousel-name">No hay promociones</h2>
                 <img class="carrousel-img" src="imgs/Logo.png"/>
                 <p class="carrousel-time">00:00:00</p>
             </div>
-            <button class="car-button" type="button" onclick="shuffle(1)">></button>
+            <button class="car-button" type="button" onclick="shuffle(1)" style="border-radius: 20px 0 0 20px;">></button>
         </div>
-        <div id="second">
-            <div class="grow-panels">
-                <img src="imgs/Logo.png"/>
-                <p>Ortodoncia</p>
-            </div>
-            <div class="grow-panels">
-                <img src="imgs/Logo.png"/>
-                <p>Harmonización</p>
-            </div>
+        <div id="second" onmouseout="change_First_Grow_Size('50vw')">
+            <a href="es/tratamientos/Ortodoncia.html">
+                <div class="grow-panels first-grow" style="background-color: blue;" onmouseover="change_First_Grow_Size('90vw')">
+                    <!-- <img src="imgs/Logo.png"/> -->
+                    <p>Ortodoncia</p>
+                </div>
+            </a>
+            <a href="es/tratamientos/Harmonización.html">
+                <div class="grow-panels second-grow" onmouseover="change_First_Grow_Size('10vw')">
+                    <!-- <img src="imgs/Logo.png"/> -->
+                    <p>Harmonización</p>
+                </div>
+            </a>
         </div>
         <div id="contacto">
             <h1>Contacto: </h1>
             <p>contactenos </p>
         </div>
+        <script>set_Second_Div()</script>
     </body>
 </html>

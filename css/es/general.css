@@ -59,20 +59,19 @@ h1, h2{
     background-color: var(--atention-1);
     position: absolute;
     top: calc(var(--beforeNav-height) + 3.5rem);
-    height: 0px;
+    height: auto;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    border-radius: 0 0 20px 20px;
 }
 
 .topNav.fixed .drop-Content {
-    height: 0px;
     position: fixed;
     top: 3.5rem;
 }
 
 .topNav .dropdown:hover .drop-Content {
     opacity: 1;
-    height: auto;
 }
 
 .topNav a{
@@ -81,7 +80,7 @@ h1, h2{
 }
 
 .topNav a:hover {
-    background-color: lightgray;
+    background-color: rgba(10, 10, 10, 0.1);
 }
 
 a {
